@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525412853654",
+    "firebase_url": "https://dawa-6bc86-default-rtdb.firebaseio.com",
+    "project_id": "dawa-6bc86",
+    "storage_bucket": "dawa-6bc86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525412853654:android:9e3238898abf80b7df9fb7",
+        "android_client_info": {
+          "package_name": "com.example.mentalhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525412853654-4mgsou5nh8guqklvnicbsqeq22fo8h4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAN-TFc_mI1hS1HykO-m7ucEdHtcbc_YQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525412853654-4mgsou5nh8guqklvnicbsqeq22fo8h4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

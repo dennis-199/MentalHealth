@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="@drawable/shape_rect01">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Fill the Survey"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarRl">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I relapse way too easily in my drinking/smoking habit"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/red"
+                    android:text="True "
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_ninjas"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="@color/red"
+                    android:layout_height="wrap_content"
+                    android:text="False"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I feel sad and unhappy"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio_pirat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="True "
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_nin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I have interest and joy in in the aspects of my life that were of major importance to me"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/raio_pirat"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="@color/red"
+                    android:layout_height="wrap_content"
+                    android:text="True"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/raio_nin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I feel like I fail in everything I try"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/rao_pirat"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="@color/red"
+                    android:layout_height="wrap_content"
+                    android:text="True"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/rao_nin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="False"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I have difficulty in concentration and making decisions"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio_rat"
+                    android:layout_width="wrap_content"
+                    android:buttonTint="@color/red"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/radio_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="I got constant anxiety and panic attacks"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/dio_pirat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/dio_nin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I am agitated and keep moving around"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/d_pirat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/d_nin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I am constantly looking over my shoulder in fear"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/dio_prat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/dio_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I do not get enough sleep sleep, too much, too little sleep "
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/io_prat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/io_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="My motivation in life is minimal"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/i_prat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/i_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I feel like the urge to move on from my negative thoughts is lacking"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/iprat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/iin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="I live too much in my head, creating negative ideas, thoughts that will only bring me harm "
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/irat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I feel fatigued "
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/rat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/inr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I feel trapped or caught"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/rt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_t"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton android:id="@+id/ir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_f"
+                    android:buttonTint="@color/red"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:text="SUBMIT"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/red"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
