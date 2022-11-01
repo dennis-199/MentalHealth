@@ -20,12 +20,17 @@
         android:theme="@style/Theme.MentalHealth"
         tools:targetApi="31">
         <activity
+            android:name=".MainUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterDoctorActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
