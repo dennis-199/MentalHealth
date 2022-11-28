@@ -2,8 +2,10 @@ package com.example.mentalhealth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -28,6 +30,7 @@ public class MainUserActivity extends AppCompatActivity {
     private ImageButton moreBtn;
     private TextView textView, fullname;
     private ProgressDialog progressDialog;
+    private CardView doctors, journal, myAppointments,chatSpace, bookAppointments, myDiagnosis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,57 @@ public class MainUserActivity extends AppCompatActivity {
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users");
         userID = user.getUid();
+
+        doctors = findViewById(R.id.Doctors);
+        doctors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainUserActivity.this, DoctorsActivity.class);
+                startActivity(intent);
+            }
+        });
+        journal = findViewById(R.id.Journal);
+        journal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainUserActivity.this, JournalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        myAppointments = findViewById(R.id.MyAppointments);
+        myAppointments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainUserActivity.this, MyAppointmentsActivity.class);
+                startActivity(intent);
+            }
+        });
+        chatSpace = findViewById(R.id.ChatSpace);
+        chatSpace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainUserActivity.this, ChatSpaceActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        bookAppointments = findViewById(R.id.BookAppointments);
+        bookAppointments.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainUserActivity.this, BookAppointmentsActivity.class);
+                startActivity(intent);
+            }
+        });
+        myDiagnosis = findViewById(R.id.MyDiagnosis);
+        myDiagnosis.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainUserActivity.this, MyDiagnosisActivity.class);
+                startActivity(intent);
+            }
+        });
 
         firebaseAuth = FirebaseAuth.getInstance ();
         progressDialog = new ProgressDialog( this );

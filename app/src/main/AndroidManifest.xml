@@ -20,6 +20,24 @@
         android:theme="@style/Theme.MentalHealth"
         tools:targetApi="31">
         <activity
+            android:name=".MyDiagnosisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatSpaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyAppointmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JournalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorsActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainUserActivity"
             android:exported="false" />
         <activity

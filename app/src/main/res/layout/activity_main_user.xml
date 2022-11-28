@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainUserActivity">
     <RelativeLayout
         android:id="@+id/toolbarRl"
@@ -19,7 +20,6 @@
             android:gravity="center"
             android:orientation="vertical">
             <TextView
-
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:id="@+id/greetings"
@@ -41,11 +41,14 @@
 
 
     </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbarRl"
         android:layout_marginTop="5dp">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,7 +72,7 @@
 
                 <!-- Column 1 -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/Donor"
+                    android:id="@+id/Doctors"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -116,7 +119,7 @@
 
                 <!-- Column 2 -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/Recipient"
+                    android:id="@+id/Journal"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -148,7 +151,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
-                            android:text="To Do"
+                            android:text="Journal"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
                             android:textSize="18sp"
@@ -164,7 +167,7 @@
 
                 <!-- Column 1 -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/BloodCamps"
+                    android:id="@+id/MyAppointments"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -210,7 +213,7 @@
 
                 <!-- Column 2 -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/BloodBank"
+                    android:id="@+id/ChatSpace"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -242,7 +245,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="10dp"
-                            android:text="Help Line"
+                            android:text="Chat space"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
                             android:textSize="18sp"
@@ -254,7 +257,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/Appointments"
+                    android:id="@+id/BookAppointments"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
@@ -298,7 +301,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/About"
+                    android:id="@+id/MyDiagnosis"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_rowWeight="1"
